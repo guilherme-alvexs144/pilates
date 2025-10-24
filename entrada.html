@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url(pexels-rpnickson-2559941.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      
+    }
+    .body{
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      height: 90vh;
+    }
+    .tudo {
+      position: relative;
+      right: 30px;
+      width: 400px;
+      height: 500px;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      color: white;
+      box-shadow: 2px 4px 7px 1px rgba(0, 0, 0, 0.336);
+      padding: 20px;
+    }
+
+    .titulo {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form1 {
+      position: relative; 
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form1 input {
+      width: 70%;
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background: transparent;
+      color: white;
+      font-size: 16px;
+      border-radius: 0;
+    }
+
+    .form1 input:focus {
+      outline: none;
+      border-bottom: 2px solid white;
+    }
+
+    .form1 label {
+      position: absolute;
+      left: 33%;
+      top: 10px;
+      color: #ccc;
+      pointer-events: none;
+      transition: 0.3s ease;
+      font-size: 15px;
+    }
+    .form1 input:focus + label,
+    .form1 input:not(:placeholder-shown) + label {
+      top: -12px;
+      font-size: 12px;
+      color: white;
+    }
+    .form1 input:not(:placeholder-shown){
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0.685);
+    }
+    .botao{
+        background-color: transparent;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+        font-family:'Poppins', sans-serif;
+        box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.151);
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    .botao:hover{
+        transform: scale(1.1);
+    }
+    .sla{
+        display: flex;
+        justify-content: center;
+    }
+    .voltar img{
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        transition: all 0.5s;
+    }
+    .voltar{
+        margin:10px 10px;
+        box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.226);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    .voltar:hover{
+        transform: scale(1.1);
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="voltar">
+        <a href="index.html"><img src="home.png"></a>
+    </div>
+    <div class="body">
+    <div class="tudo">
+    <div class="conatiner1">
+        <div class="titulo">
+            <h2>Titulo</h2>
+            <p>alguma coisa</p>
+        </div>
+        <br>
+        <br>
+        <div class="formulario">
+            <div class="form1">
+            <input type="text" id="nome" placeholder=" " required>
+            <label for="nome">Digite seu login</label>
+            </div>
+
+            <div class="form1">
+            <input type="password" id="pass" placeholder=" " required>
+            <label for="pass">Digite sua senha</label>
+            </div>
+            <br><br>
+            <div class="sla">
+            <div class="botao"><a href="guarantee.html">submit</a></div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

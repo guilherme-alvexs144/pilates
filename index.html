@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        body{
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            background-color: aliceblue;
+        }
+        .botao{
+            background-color: transparent;
+            color: white;
+            background-color: rgba(133, 206, 182, 0.694);
+            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.144);
+            padding: 10px;
+            width: fit-content;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 1s;
+            transform: scale(1.1);
+        }
+        .botao:hover{
+            transform: scale(1);
+            box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.123);
+        }
+        .topo{
+            display: flex;
+            gap: 50px;
+            justify-content: space-around;
+            position: relative;
+            color: rgb(50, 75, 95);
+        }
+        .conteudo2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }  
+        .tudo{
+            margin-top: 100px;
+            background-color: rgb(255, 255, 255);
+            backdrop-filter: blur(10px);
+            width: 70%;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.151);
+        }
+        .conteudo{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: rgb(0, 0, 0);
+        }
+        .cont1{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            border-radius: 20px;
+            box-shadow: 4px 4px 7px 4px rgba(0, 0, 0, 0.116);
+            align-items: center;
+            padding: 10px;
+            transition: all 0.7s;
+            cursor: pointer;
+            border-color: rgb(255, 255, 255);
+        }
+        .icone{
+            width: 120px;
+            margin: auto;
+        }
+        .cont1 div{
+            text-align: center;
+        }
+        .menu1{
+            display: flex;
+            align-items: center;
+        }
+        .menu1 h1{
+            color: rgb(94, 129, 122);
+        }
+        .menu1 ul{
+            width: 100%;
+            list-style-type: none;
+            display:flex;
+            justify-content: end;
+            gap: 50px;
+        }
+        .imagems{
+            width: 100%;
+            height: 100%;
+            background-color: grey;
+        }
+        .linha1{
+            border-radius: 50px;
+            width: 90%;
+            margin: auto;
+            border: solid 1px rgba(128, 128, 128, 0.199);
+        }
+        .cont1:hover{
+            transform: scale(1.05);
+            box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.144);
+        }
+        .menu1 li{
+            position: relative;
+            cursor: pointer;
+        }
+        .menu1 li::after{
+            position: absolute;
+            content: '';
+            width: 0%;
+            bottom: 0;
+            left: 0;
+            height: 4px;
+            background-color: rgba(129, 167, 201, 0.582);
+            transition: all 0.7s;
+            border-radius: 60px;
+        }
+        .menu1 li:hover::after{
+            width: 30%;
+            left: 70%;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="tudo">
+        <div class="menu1">
+            <h1>Pilates</h1>
+            <ul>
+                <li>Quem somos</li>
+            </ul>
+        </div>
+        <hr class="linha1">
+        <br>
+        <div class="topo">
+            <div class="conteudo2">
+            <h1>Nome da clinica</h1>
+            <h3>Alguma coisa</h3>
+            <br>
+            <div class="botao"><a href="home.html">entrar</a></div>
+        </div>
+    </div>
+        <br><br>
+        <!--Começo de outro negócio-->
+        <div class="conteudo">
+            <div class="cont1">
+            <img src="peso.png" class="icone">
+            <div>
+                <h2>Força</h2>
+                <hr>
+                <p>
+                    Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Eligendi,
+                    sint numquam beatae officiis nihil voluptatum
+                    doloremque delectus veniam alias corrupti
+                    laborum nam facilis nisi?
+                </p>
+            </div>
+        </div>
+        <div class="cont1">
+            <img src="peso.png" class="icone">
+            <div>
+                <h2>Força</h2>
+                <hr>
+                <p>
+                    Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Eligendi,
+                    sint numquam beatae officiis nihil voluptatum
+                    doloremque delectus veniam alias corrupti
+                    laborum nam facilis nisi?
+                </p>
+            </div>
+        </div>
+        <div class="cont1">
+            <img src="peso.png" class="icone">
+            <div>
+                <h2>Força</h2>
+                <hr>
+                <p>
+                    Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Eligendi,
+                    sint numquam beatae officiis nihil voluptatum
+                    doloremque delectus veniam alias corrupti
+                    laborum nam facilis nisi?
+                </p>
+            </div>
+        </div>
+        <div class="cont1">
+            <img src="peso.png" class="icone">
+            <div>
+                <h2>Força</h2>
+                <hr>
+                <p>
+                    Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Eligendi,
+                    sint numquam beatae officiis nihil voluptatum
+                    doloremque delectus veniam alias corrupti
+                    laborum nam facilis nisi?
+                </p>
+            </div>
+        </div>
+        </div>
+       
+
+
+       
+    </div>
+   
+</body>
+
+
+</html>
+
+
+
