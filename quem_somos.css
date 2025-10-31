@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: aliceblue;
+    padding: 20px;
+}
+.corpo_interno{
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.199);
+}
+.imagem_dos_profissionais{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: rgb(196, 165, 82);
+    color: white;
+    border-radius: 50%;
+    padding: 30px;
+}
+.bola_de_tras{
+    width: 210px;
+    height: 210px;
+    background-color: rgb(99, 197, 181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px 4px rgb(130, 196, 185);
+    margin: auto;
+    margin-top: 20px;
+}
+nav{
+    background-color: rgb(114, 184, 178);
+    padding: 20px;
+    border-radius: 30px 30px 0px 0px;
+}
+.menu_de_voltar img{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.menu_de_voltar img:hover{
+    transform: scale(1.1);
+}
+.conteudo_dos_profissionais{
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    column-gap: 50px;
+}
+.imagem{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+.conteudo_dos_profissionais img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+   
+}
+.conteudo_do_medico{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+
+}
+.contorno{
+    width: 205px;
+    height: 205px;
+    background-color: rgb(42, 95, 104);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.perfil_do_profissional{
+    background-color: white;
+    padding: 20px;
+    padding-top: 40px;
+    width: 250px;
+    border-radius: 20px;
+    border: solid 2px rgba(113, 174, 185, 0.384);
+    margin-top: -45px;
+    z-index: 0;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.205);
+}
+.história_da_clinica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagem_da_clinica{
+    width: 100%;
+    background-image: url(studio.webp);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 100px;
+}
+.texto_da_história{
+    padding: 30px;
+    text-align: center;
+}
+.conteudo_da_história:nth-child(even){
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+.conteudo_da_história:nth-child(odd){
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    direction: rtl;
+    text-align: left;
+    column-gap: 20px;
+}
+.containers_da_história{
+    margin-top: 50px;
+}
+.texto_da_história hr{
+    width: 80%;
+}
